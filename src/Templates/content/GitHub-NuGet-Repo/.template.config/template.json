@@ -61,6 +61,12 @@
       "parameters": {
         "format": "yyyy"
       }
+    },
+    "empty": {
+      "type": "generated",
+      "generator": "constant",
+      "parameters": { "value": "" },
+      "fileRename": ".tmpl"
     }
   }
 }

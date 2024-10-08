@@ -10,15 +10,8 @@ $> dotnet new install PodNet.Templates
 The command above will install the templates contained in this package. Then, you can use the templates in `dotnet new`:
 
 ```cmd
-$> dotnet new pod-nuget-repo ^
-        --sdkVersion "9.0.100-rc" ^
-        --targetFramework "net9.0" ^
-        --langVersion "13.0" ^
-        --description "Hello world!" ^
-        --packageTags "hello, world"
+$> dotnet new pod-nuget-repo --sdkVersion "9.0.100-rc.1.24452.12" --targetFramework "net9.0" --langVersion "13.0" --description "Hello world!" --packageTags "hello, world"
 ```
-
-> [NOTE!] In CMD, `^` is used to denote a multiline command (`\` in Bash, `` ` `` in PowerShell). It's only shown here for presentation purposes. You can write the parameters in one line without the `^`.
 
 At v1.0.0, only one template is available, see below.
 
