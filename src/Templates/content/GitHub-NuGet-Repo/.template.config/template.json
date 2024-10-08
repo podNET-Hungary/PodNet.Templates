@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "identity": "PodNet.Templates.GitHubNuGetRepo",
+  "name": "podNET NuGet package GitHub repo",
+  "shortName": "pod-nuget-repo",
+  "guids": [
+    "3ED2BD42-60E2-4576-90EF-B70F1FADCEC1",
+    "52B4873F-9533-4C80-A473-C7B3B4510C13",
+    "58E83F42-E7F1-4A20-9E52-D856C9AD933E",
+    "AB59FA90-615E-4BEC-8986-B8087EE570CF",
+    "E70BE6A5-0A94-41BD-86B8-E217793342C8"
+  ],
+  "author": "podNET Hungary",
+  "classifications": [],
+  "sourceName": "ProjectTemplate",
+  "preferNameDirectory": false,
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "symbols": {
+    "sdkVersion": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "$GlobalJsonSdkVersion$",
+      "description": "The value of the SDK to be used in global.json. Take care to define a specific version when using preview so that the .NET install script can pick up the correct version.",
+      "isRequired": true
+    },
+    "targetFramework": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "$PodNetTargetFramework$",
+      "description": "The target framework to use (eg. 'netstandard2.0', 'net9.0').",
+      "isRequired": true
+    },
+    "langVersion": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "$LangVersion$",
+      "description": "The C# language version to use (eg. '13.0').",
+      "isRequired": true
+    },
+    "description": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "$PodNetPackageDescription$",
+      "description": "The Description supplied to the NuGet package and used in README.md.",
+      "isRequired": true
+    },
+    "packageTags": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "$PodNetPackageTags$",
+      "description": "The PackageTags supplied to the NuGet package.",
+      "isRequired": true
+    },
+    "copyrightYear": {
+      "type": "generated",
+      "generator": "now",
+      "replaces": "$CopyrightYear$",
+      "parameters": {
+        "format": "yyyy"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "sdk": {
+    "version": "$GlobalJsonSdkVersion$",
+    "rollForward": "latestMajor"
+  }
+}

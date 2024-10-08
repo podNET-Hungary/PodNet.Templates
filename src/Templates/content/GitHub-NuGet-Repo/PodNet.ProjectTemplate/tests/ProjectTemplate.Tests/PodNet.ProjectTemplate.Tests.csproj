@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>$PodNetTargetFramework$</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="MSTest" />
+
+		<ProjectReference Include="..\..\src\ProjectTemplate\PodNet.ProjectTemplate.csproj" />
+		
+		<Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+	</ItemGroup>
+</Project>

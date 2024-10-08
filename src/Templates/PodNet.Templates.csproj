@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		
+		<PackageType>Template</PackageType>
+		<Description>Custom templates for PodNet packages</Description>
+		<PackageTags>template, project, solution, item, ProjectTemplate, ItemTemplate, PodNet, awesome</PackageTags>
+		
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<ImplicitUsings>disable</ImplicitUsings>
+
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<IncludeSymbols>false</IncludeSymbols>
+		<IncludeSource>false</IncludeSource>
+		<ContentTargetFolders>content</ContentTargetFolders>
+		<EnableDefaultItems>false</EnableDefaultItems>
+		<NoDefaultExcludes>true</NoDefaultExcludes>
+        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+
+		<NoWarn>$(NoWarn);CS8021</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="PodNet.NuGet.Core" PrivateAssets="all" />
+		<PackageReference Remove="NETStandard.Library" />
+		<Content Include="content\**\*"/>
+		<Compile Remove="**\*" />
+	</ItemGroup>
+
+</Project>

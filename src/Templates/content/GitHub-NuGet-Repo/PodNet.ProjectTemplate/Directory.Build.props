@@ -1,0 +1,9 @@
+<Project>
+	<PropertyGroup>
+		<LangVersion>$LangVersion$</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseArtifactsOutput>true</UseArtifactsOutput>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+</Project>

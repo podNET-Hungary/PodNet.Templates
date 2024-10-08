@@ -1,0 +1,8 @@
+<Project>
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageVersion Include="PodNet.NuGet.Core" Version="1.2.2" />
+	</ItemGroup>
+</Project>
